@@ -1,0 +1,59 @@
+:root {
+    /* If I decide to use variables */
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+/* Background Image */
+.hero {
+    background-image: url("../img/stefan-steinbauer-23268-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 80rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    background-color: white;
+}
+
+.quote {
+    color: white;
+    font-size: 4rem;
+    
+}
+
+.quote-container {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.author {
+    align-items: right;
+    color: white;
+}
