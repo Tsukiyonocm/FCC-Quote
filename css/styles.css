@@ -1,6 +1,4 @@
-:root {
-    /* If I decide to use variables */
-}
+
 
 /* Global Reset */
 * {
@@ -39,6 +37,14 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.quote-container {
     width: 80rem;
     min-height: 30rem;
     display: flex;
@@ -50,13 +56,10 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-
-
 .author {
     display: flex;
     justify-content: flex-end;
 }
-
 
 .quote {
     padding: 2rem;
