@@ -1,6 +1,7 @@
 
 
-/* Global Reset */
+/** Global Reset
+ ---------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +27,8 @@ body {
     font-size: 2rem;
 }
 
-/* Background Image */
+/** Background
+ ---------------------------------------------------------*/
 .hero {
     background-image: url("../img/stefan-steinbauer-23268-unsplash.jpg");
     background-size: cover;
@@ -37,38 +39,26 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    
 }
 
-.quote-container {
-    width: 80rem;
-    min-height: 30rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-
-    background-color: rgba(0,0,0,0.5);
-}
-
-.author {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.quote {
-    padding: 2rem;
-    font-size: 3rem;
-    width: 65rem;
-}
+/** Quote Box
+ ---------------------------------------------------------*/
 
 
-.author {
-    width: 40rem;
-}
 
+
+
+
+/** Buttons and Social
+ ---------------------------------------------------------*/
+ 
+
+
+
+ /** Media Query
+ ---------------------------------------------------------*/
+
+
+
+ 
