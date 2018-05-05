@@ -39,7 +39,43 @@ body {
 }
 
 .container {
+    margin: 20rem;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* To be deleted */
+    background-color: blue;
+}
+
+
+.container,
+.two,
+.button,
+.social {
+    flex: 1;
+}
+
+
+.two {
+    width: 100%;
+    height: 40rem;
+    flex: 0 0 100%;
+    background-color: beige;
+}
+
+
+
+.button {
+    background-color: brown;
+    margin: 2rem 1rem 0 0;
     
+}
+
+.social {
+    background-color: blueviolet;
+    margin: 2rem 0 0 1rem;
+
 }
 
 /** Quote Box
