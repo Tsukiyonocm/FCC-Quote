@@ -1,4 +1,9 @@
-
+/** Variables
+ ---------------------------------------------------------*/
+ :root {
+     --light-grey: rgba(99,99,99,0.5);
+     --white: #fff;
+ }
 
 /** Global Reset
  ---------------------------------------------------------*/
@@ -18,11 +23,17 @@ html {
     font-size: 62.5%;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 body {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    color: white;
+    color: var(--white);
     line-height: 1.5;
     font-size: 2rem;
 }
@@ -35,65 +46,80 @@ body {
     background-position: center;
     width: 100wh;
     height: 100vh;
-    display: flex;
+    position: relative;
 }
 
 .container {
-    margin: 20rem;
-    padding: 5rem;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 80rem;
+    margin: 0 auto;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     /* To be deleted */
-    background-color: blue;
+    background-color: var(--light-grey);
 }
 
-
-.container,
-.two,
-.button,
-.social {
-    flex: 1;
-}
-
-
-.two {
-    width: 100%;
-    height: 40rem;
-    flex: 0 0 100%;
-    background-color: beige;
-}
-
-
-
-.button {
-    background-color: brown;
-    margin: 2rem 1rem 0 0;
-    
-}
-
-.social {
-    background-color: blueviolet;
-    margin: 2rem 0 0 1rem;
-
-}
 
 /** Quote Box
  ---------------------------------------------------------*/
+.content {
+    padding: 5rem;
+}
+
+ .quote-box {
+    padding: 1rem;
+    color: black;
+    background-color: var(--white);
+}
 
 
+.quote,
+.author {
+    display: inline-block;
+}
 
+.quote {
+    font-size: 4rem;
+}
 
+.author {
+    font-size: 2rem;
+    float: right;
+}
 
 
 /** Buttons and Social
  ---------------------------------------------------------*/
+ .buttons {
+     max-height: 4rem;
+     padding-top: 1rem;
+ }
  
+ .new-quote {
+     float: left;
+     max-width: 100%;
+     color: black;
+     display: inline-block;
+     background-color: #fff;
+ }
 
+ .social {
+     float: right;
+     display: inline-block;
+ }
 
-
- /** Media Query
- ---------------------------------------------------------*/
+ .facebook,
+ .instagram,
+ .twitter {
+     display: inline-block;
+     background-color: beige;
+     color: black;
+     margin-right: .5rem;
+     padding-right: 1rem;
+ }
 
 
 
