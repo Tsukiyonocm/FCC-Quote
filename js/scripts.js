@@ -1,3 +1,15 @@
+//Select QuoteBox for creating elements
+const quoteBox = document.querySelector(".quote-box");
+
+//Create Elements and attach classes
+const quote = document.createElement("div");
+quote.setAttribute("class", "quote");
+
+//Attach as a child to QuoteBox
+quoteBox.append(quote);
+
+
+
 // Create a request variable and assign a new XMLHttpRequest object to it
 var request = new XMLHttpRequest();
 
@@ -12,6 +24,21 @@ request.onload = function(){
         console.log(data.quote);
         console.log(data.author);
         console.log(data.cat);
+
+        //Create Quote Elements
+        const p = document.createElement("p");
+        let quoteString = '" ' + data.quote + ' "';
+        
+        quote.append(p);
+        p.append(quoteString);
+
+        //Create author elements
+        const span = document.createElement("span");
+        span.setAttribute("class", "author");
+        let authorString = "- " + data.author;
+
+        quote.append(span);
+        span.append(authorString);
     }
     else {
         console.log("error");
@@ -20,3 +47,8 @@ request.onload = function(){
 }
 
 request.send();
+
+
+
+// div class quote
+// p + span + &quot; + p text + &quot;
