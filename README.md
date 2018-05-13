@@ -1,7 +1,7 @@
 TODO List
-1. I need to take the data from the API and create it using the html file. I need to create an element for the quote and the author of the quote.
-2. I also need to create the button to reload the page for a new quote.
-3. Research more on adding in the social media links
+
+1. I also need to create the button to reload the page for a new quote.
+2. Research more on adding in the social media links
 
 Links used in the creation of this:
 
