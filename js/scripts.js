@@ -21,14 +21,11 @@ request.onload = function(){
     var data = JSON.parse(this.response);
     
     if(request.status >= 200 && request.status < 400){
-        console.log(data.quote);
-        console.log(data.author);
-        console.log(data.cat);
 
         //Create Quote Elements
         const p = document.createElement("p");
         let quoteString = '" ' + data.quote + ' "';
-        
+
         quote.append(p);
         p.append(quoteString);
 
