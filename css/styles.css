@@ -2,7 +2,8 @@
  ---------------------------------------------------------*/
  :root {
      --light-grey: rgba(99,99,99,0.5);
-     --white: #fff;
+     --white: rgba(255,255,255,0.5);
+     --drop-shadow: rgba(0,0,0,0.5);
  }
 
 /** Global Reset
@@ -57,9 +58,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* To be deleted */
-    background-color: var(--light-grey);
 }
 
 
@@ -67,12 +65,15 @@ body {
  ---------------------------------------------------------*/
 .content {
     padding: 5rem;
+    background-color: var(--white);
 }
+
 
  .quote-box {
     padding: 1rem;
     color: black;
-    background-color: var(--white);
+    border-bottom: 1px solid black;
+    
 }
 
 
@@ -100,10 +101,21 @@ body {
  
  .new-quote {
      float: left;
-     max-width: 100%;
+     font-size: 2rem;
+     padding: 0 3rem;
+     max-width: 14rem;
+     border-radius: 0.5rem;
+     box-shadow: 4px 8px 10px var(--drop-shadow);
      color: black;
-     display: inline-block;
+     background-color: #eee;
+     display: inline-b1lock;
+     transition: .5s;
+ }
+
+ .new-quote:hover {
+     color: rgb(119, 0, 20);
      background-color: #fff;
+     cursor: pointer;
  }
 
  .social {

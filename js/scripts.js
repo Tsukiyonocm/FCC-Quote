@@ -1,3 +1,9 @@
+//Select Button for new Quote
+var reloadQuote = document.querySelector(".new-quote");
+reloadQuote.addEventListener("click", function(){
+    window.location.reload(false);
+})
+
 //Select QuoteBox for creating elements
 const quoteBox = document.querySelector(".quote-box");
 
@@ -45,7 +51,3 @@ request.onload = function(){
 
 request.send();
 
-
-
-// div class quote
-// p + span + &quot; + p text + &quot;
