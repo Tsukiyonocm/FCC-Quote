@@ -2,7 +2,7 @@
  ---------------------------------------------------------*/
  :root {
      --light-grey: rgba(99,99,99,0.5);
-     --white: rgba(255,255,255,0.5);
+     --white: rgba(255,255,255,0.7);
      --drop-shadow: rgba(0,0,0,0.5);
  }
 
@@ -64,13 +64,14 @@ body {
 /** Quote Box
  ---------------------------------------------------------*/
 .content {
-    padding: 5rem;
+    padding: 2rem 5rem 6rem 5rem;
     background-color: var(--white);
+    border-radius: 7rem 1rem;
 }
 
 
  .quote-box {
-    padding: 1rem;
+    padding: 2rem 1rem; 
     color: black;
     border-bottom: 1px solid black;
     
@@ -102,7 +103,7 @@ body {
  .new-quote {
      float: left;
      font-size: 2rem;
-     padding: 0 3rem;
+     padding: .5rem 3rem;
      max-width: 14rem;
      border-radius: 0.5rem;
      box-shadow: 4px 8px 10px var(--drop-shadow);
@@ -115,7 +116,7 @@ body {
  .new-quote:hover {
      color: rgb(119, 0, 20);
      background-color: #fff;
-     cursor: pointer;
+     cursor: pointer;ccccccccc
  }
 
  .social {
@@ -126,11 +127,14 @@ body {
  .facebook,
  .instagram,
  .twitter {
-     display: inline-block;
-     background-color: beige;
-     color: black;
-     margin-right: .5rem;
-     padding-right: 1rem;
+    max-width: 8rem;
+    padding: .5rem 3rem;
+    margin: 0 auto;
+    display: inline-block;
+    color: black;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 4px 8px 10px var(--drop-shadow);
  }
 
 
