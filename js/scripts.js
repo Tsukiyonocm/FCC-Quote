@@ -62,6 +62,7 @@ request.onload = function(){
         }
         var tweetURL = "https://twitter.com/intent/tweet?text=" + tweetText;
         tweetButton.setAttribute("href", tweetURL);
+        tweetButton.setAttribute("target", "_blank");
 
     }
     else {
