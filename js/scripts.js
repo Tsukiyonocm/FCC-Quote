@@ -62,12 +62,6 @@ request.onload = function(){
         }
         var tweetURL = "https://twitter.com/intent/tweet?text=" + tweetText;
         tweetButton.setAttribute("href", tweetURL);
-        tweetButton.setAttribute("url", "https://tsukiyonocm.github.io/FCC-Quote/");
-        
-        console.log(tweetText);
-        console.log(tweetURL);
-        console.log(tweetButton);
-
 
     }
     else {
