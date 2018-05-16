@@ -16,6 +16,11 @@ quoteBox.append(quote);
 
 
 
+
+
+
+
+// ========== Quote API Information ====================================
 // Create a request variable and assign a new XMLHttpRequest object to it
 var request = new XMLHttpRequest();
 
@@ -30,7 +35,8 @@ request.onload = function(){
 
         //Create Quote Elements
         const p = document.createElement("p");
-        let quoteString = '" ' + data.quote + ' "';
+        p.setAttribute("class", "quoteText");
+        let quoteString =  data.quote;
 
         quote.append(p);
         p.append(quoteString);
@@ -42,6 +48,27 @@ request.onload = function(){
 
         quote.append(span);
         span.append(authorString);
+
+        //Selecting Text to be used in Tweet
+        var selectTweet = document.getElementsByClassName("quote")[0];
+        var tweetText = selectTweet.textContent;
+
+        //Selecting Tweet Button
+        var tweetButton = document.getElementsByClassName("create-tweet")[0];
+        
+        //Apply class + formatting for URL Link
+        for(var i = 0; i < tweetText.length; i++){
+            tweetText = tweetText.replace(" ","+"); 
+        }
+        var tweetURL = "https://twitter.com/intent/tweet?text=" + tweetText;
+        tweetButton.setAttribute("href", tweetURL);
+        tweetButton.setAttribute("url", "https://tsukiyonocm.github.io/FCC-Quote/");
+        
+        console.log(tweetText);
+        console.log(tweetURL);
+        console.log(tweetButton);
+
+
     }
     else {
         console.log("error");
@@ -51,3 +78,11 @@ request.onload = function(){
 
 request.send();
 
+
+
+// //Create a tweet
+
+
+// createTweet.addEventListener("click", function(){
+//     console.log("clicked");
+// })
