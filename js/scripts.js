@@ -72,12 +72,3 @@ request.onload = function(){
 }
 
 request.send();
-
-
-
-// //Create a tweet
-
-
-// createTweet.addEventListener("click", function(){
-//     console.log("clicked");
-// })
