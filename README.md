@@ -1,7 +1,6 @@
 TODO List
 
-1. I also need to create the button to reload the page for a new quote.
-2. Research more on adding in the social media links
+1. Make the page responsive. Right now the text remains too large on smaller screens and it grows beyond the pictures borders.
 
 Links used in the creation of this:
 
