@@ -191,4 +191,59 @@ body {
  } 
 
 
- 
+/** Media Queries
+ ---------------------------------------------------------*/ 
+
+/* Tablets: from 0 to 767px */
+@media only screen and (max-width: 767px) {
+    .quote {
+        font-size: 3.5rem;
+    }
+    
+    .author {
+        font-size: 1.75rem;
+    }
+
+    .new-quote {
+        font-size: 1.55rem;
+        max-width: 13rem;
+        padding: .3rem 2rem;
+    }
+
+    .twitter {
+        height: 2.9rem;
+        max-width: 6rem;
+    }
+
+    .icon-twitter {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+
+
+
+ /* Small Phones: 0 to 480px */
+ @media only screen and (max-width: 480px) {
+    .quote {
+        font-size: 2.5rem;
+    }
+    
+    .author {
+        font-size: 1.25rem;
+    }
+
+    .new-quote {
+        font-size: 1.2rem;
+        padding: .3rem 1.4rem;
+    }
+
+    .twitter {
+        height: 2.4rem;
+    }
+
+    .icon-twitter {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+ }
