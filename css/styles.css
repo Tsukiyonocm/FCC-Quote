@@ -172,6 +172,10 @@ body {
     position: relative;
  }
 
+.twitter:hover {
+    background-color: #fff;
+}
+
 .create-tweet {
     position: absolute;
     top: 50%;
